@@ -16,9 +16,9 @@ public class Workout {
 
 	private String exersize;
 	private String notes;
-	private int set;
-	private int rep;
-	private int weight;
+	private Integer set;
+	private Integer rep;
+	private Integer weight;
 	private String split;
 	private LocalDateTime date;
 
@@ -26,11 +26,11 @@ public class Workout {
 	}
 
 	// GETTERS AND SETTERS
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+	public void setId(Integer id) {
 		this.id = id;
 	}
 
@@ -50,27 +50,27 @@ public class Workout {
 		this.notes = notes;
 	}
 
-	public int getSet() {
+	public Integer getSet() {
 		return set;
 	}
 
-	public void setSet(int set) {
+	public void setSet(Integer set) {
 		this.set = set;
 	}
 
-	public int getRep() {
+	public Integer getRep() {
 		return rep;
 	}
 
-	public void setRep(int rep) {
+	public void setRep(Integer rep) {
 		this.rep = rep;
 	}
 
-	public int getWeight() {
+	public Integer getWeight() {
 		return weight;
 	}
 
-	public void setWeight(int weight) {
+	public void setWeight(Integer weight) {
 		this.weight = weight;
 	}
 
@@ -93,7 +93,11 @@ public class Workout {
 	// TOSTRING
 	@Override
 	public String toString() {
-		return "Workout ID: " + id + ", Exersize: " + exersize + " Split: " + split + " Date: " + date.getYear() + "-" + date.getMonthValue() + "-" + date.getDayOfMonth() + " Sets: " + set + " Reps: " + rep + " Weight: " + weight + " Notes: " + notes;
+		
+		return "Workout ID: " + id + ", Exersize: " + exersize + ", Notes: " + notes + ", Sets: " + set + ", Reps: " + rep
+				+ ", Weight: " + weight + ", Split: " + split + ", Date: " + date.getDayOfMonth() + "-" + date.getMonthValue() + "-" + date.getYear();
 	}
+
+
 
 }

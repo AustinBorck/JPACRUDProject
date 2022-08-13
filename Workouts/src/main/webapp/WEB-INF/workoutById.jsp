@@ -19,7 +19,7 @@
 		<input type="submit" value="Delete" class="delete" />
 	</form>
 	<form action="updatePage.do" method="GET">
-		<input type="hidden" value="${w.id}" name="UpdateThisWorkout" /> <input
+		<input type="hidden" value="${workout.id}" name="UpdateThisWorkout" /> <input
 			type="submit" value="Update" class="update" />
 	</form>
 

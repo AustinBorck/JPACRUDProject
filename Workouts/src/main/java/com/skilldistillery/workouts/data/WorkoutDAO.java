@@ -10,6 +10,6 @@ public interface WorkoutDAO {
 	List<Workout> findAll();
 	List<Workout> findWorkoutsByDate(String date);
 	boolean deleteWorkout(int id);
-	Workout updateWorkout(int id);
+	Workout updateWorkout(int id, Workout updateWorkout);
 	Workout createWorkout(Workout newWorkout);
 }

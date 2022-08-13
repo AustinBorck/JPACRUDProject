@@ -23,8 +23,8 @@
 <input type="submit" value="search"/>
 </form>
 <h4>Select Workout by ID</h4>
-<form action="workoutById.do" method="GET">
-<input type="number" name="id">
+<form action="workoutById.do" method="GET" >
+<input type="number" name="id" required>
 <input type="submit" value="search"/>
 </form>
 

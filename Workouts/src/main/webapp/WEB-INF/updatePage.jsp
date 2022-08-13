@@ -24,7 +24,8 @@ Sets: <input type="number" name="set" value="${workout.set}"/><br>
 Reps: <input type="number" name="rep" value="${workout.rep}"/><br> 
 Weight: <input type="number" name="weight" value="${workout.weight}"/><br> 
 Notes: <input type="text" name="notes" value="${workout.notes}"/><br> 
-<input type="submit" value="Update Workout"/>
+  <input type="hidden" value="${workout.id}" name="id"/> 
+<input type="submit" value="Update" class="update"/>
 </form>
 </body>
 </html>

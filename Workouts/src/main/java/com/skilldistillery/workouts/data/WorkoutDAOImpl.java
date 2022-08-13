@@ -50,8 +50,16 @@ public class WorkoutDAOImpl implements WorkoutDAO {
 	}
 
 	@Override
-	public Workout updateWorkout(int id) {
-		return null;
+	public Workout updateWorkout(int id, Workout updatedWorkout) {
+		Workout editedWorkout = em.find(Workout.class, id);
+		editedWorkout.setDate(updatedWorkout.getDate());
+		editedWorkout.setExersize(updatedWorkout.getExersize());
+		editedWorkout.setSplit(updatedWorkout.getSplit());
+		editedWorkout.setSet(updatedWorkout.getSet());
+		editedWorkout.setRep(updatedWorkout.getRep());
+		editedWorkout.setWeight(updatedWorkout.getWeight());
+		editedWorkout.setNotes(updatedWorkout.getNotes());
+		return editedWorkout;
 	}
 
 	@Override

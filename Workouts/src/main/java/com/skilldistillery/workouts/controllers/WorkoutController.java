@@ -44,7 +44,7 @@ public class WorkoutController {
 	@RequestMapping(path = "workoutById.do")
 	public String idWorkout(Integer id, Model model) {
 		Workout workout = dao.findById(id);
-		if(workout != null) {
+		if(workout != null ) {
 			model.addAttribute("workout", workout);
 			return "workoutById";
 			}
@@ -69,8 +69,14 @@ public class WorkoutController {
 	}
 	
 	@RequestMapping(path = "updatePage.do")
-	public String updatePage (Model model) {
+	public String updatePage (int UpdateThisWorkout, Model model) {
+		model.addAttribute("workout", dao.findById(UpdateThisWorkout));
 		return "updatePage";
+	}
+	@RequestMapping(path="update.do")
+	public String updateGood(int id, Workout updatedWorkout, Model model) {
+		model.addAttribute("workout", dao.updateWorkout(id, updatedWorkout));
+		return "updateGood";
 	}
 	
 }

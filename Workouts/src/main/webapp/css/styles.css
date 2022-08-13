@@ -1,62 +1,119 @@
 @charset "UTF-8";
 .button{
-	background-color: #626262; /* Green */  
-	border: 1px solid red;
-	color: #ff2600;
-  padding: 15px 32px;
+	background-color: #626262; 
+	border: 1px solid black;
+	color: dark gray;
+  padding: 10px 20px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
 }
 
 .delete{
-	background-color: red; /* Green */  
-	border: 1px solid #626262;
-	color: #626262;
-  padding: 15px 32px;
+	background-color: red;
+	border: 1px solid #000000;
+	color: #000000;
+  padding: 10px 20px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
 }
 
 .update{
-	background-color: #33FF99; /* Green */  
+	background-color: #0432ff; 
 	border: 1px solid #626262;
-	color: #626262;
-  padding: 15px 32px;
+	color: #000000;
+  padding: 10px 20px;
   text-align: center;
   display: inline-block;
   font-size: 20px;
 }
+h2{
+	text-align: center;
+color: white;
+outline-color: black;
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+outline-width: 15px;
+font-size: 50px;
+}
 h1{
 text-align: center;
-color: #626262;
+color: white;
+outline-color: black;
+ text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+outline-width: 15px;
 font-size: 50px;
 }
 h3{
 text-align: center;
-color: #626262;
+color: white;
+outline-color: black;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+outline-width: 15px;
 font-size: 40px;
 }
 h4{
 text-align: center;
-color: #626262;
+color: white;
+outline-color: black;
+text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+outline-width: 15px;
 font-size: 30px;
 }
 body{
-	
- background-color: #72a6ba;
+background-image: url("https://images.unsplash.com/photo-1558611848-73f7eb4001a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2371&q=80");
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 form{
 	font-size: 20px;
 	text-align:center;
-	color: #33FF99;
+	color: #000000;
+	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+	
 }
 a{
 	text-align: left;
-	color: #33FF99;
+	color: #000000;
 	font-size: 30px;
 }
-a:hover {
-  color: #00f900;
+.workoutdata{
+	color: #000000;
+	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+th{
+	color: #000000;
+	text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+table{
+		text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+}
+.homebutton{
+  width: 100%;
+  appearance: button;
+  background-color: #000;
+  background-image: none;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
 }

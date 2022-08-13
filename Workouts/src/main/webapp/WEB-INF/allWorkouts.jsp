@@ -13,7 +13,7 @@
 <body>
 <main class="container-fluid">
 
-	<form action="home.do" method="GET">
+<form action="home.do" method="GET" class="homebutton">
 		<input type="submit" value="Home">
 	</form>
 	<h3>All workouts</h3>

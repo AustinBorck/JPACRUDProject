@@ -12,11 +12,13 @@
 <body>
 <main class="container-fluid">
 
-<form action="home.do" method="GET">
+<form action="home.do" method="GET" class="homebutton">
 <input type="submit" value="Home">
 </form>
 <h2>Your added workout</h2>
+<div class="workoutdata">
 ${workout}
+</div>
 </main>
 </body>
 </html>

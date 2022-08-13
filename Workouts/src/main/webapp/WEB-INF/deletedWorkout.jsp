@@ -11,7 +11,7 @@
 <body>
 <main class="container-fluid">
 
-<form action="home.do" method="GET">
+<form action="home.do" method="GET" class="homebutton">
 <input type="submit" value="Home">
 
 <h2>The workout was deleted</h2>

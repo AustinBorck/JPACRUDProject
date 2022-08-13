@@ -12,12 +12,15 @@
 <body>
 <main class="container-fluid">
 
-	<form action="home.do" method="GET">
+<form action="home.do" method="GET" class="homebutton">
 		<input type="submit" value="Home">
 	</form>
 	<h3>Your Selected Workout</h3>
 	<br>
-	<br> ID: ${workout.id } ${workout}
+	<br>
+	 <div class="workoutdata">
+${workout}
+</div>
 
 	<form action="delete.do" method="POST">
 		<input type="hidden" value="${workout.id}" name="DeleteThisWorkout" />

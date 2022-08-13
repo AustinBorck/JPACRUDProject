@@ -1,7 +1,6 @@
 package com.skilldistillery.workouts.entities;
 
-import java.time.LocalDateTime;
-
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,13 +15,22 @@ public class Workout {
 
 	private String exersize;
 	private String notes;
+	
+	@Column(name="number_sets")
 	private Integer set;
 	private Integer rep;
 	private Integer weight;
 	private String split;
-	private LocalDateTime date;
+	
+	@Column(name="workout_date")
+	private String date;
+	
 
 	public Workout() {
+	}
+
+	public Workout(String date, String exersize, String notes, Integer rep, Integer set, String split,
+			Integer weight) {
 	}
 
 	// GETTERS AND SETTERS
@@ -82,11 +90,11 @@ public class Workout {
 		this.split = split;
 	}
 
-	public LocalDateTime getDate() {
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(LocalDateTime date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 
@@ -94,8 +102,8 @@ public class Workout {
 	@Override
 	public String toString() {
 		
-		return "Workout ID: " + id + ", Exersize: " + exersize + ", Notes: " + notes + ", Sets: " + set + ", Reps: " + rep
-				+ ", Weight: " + weight + ", Split: " + split + ", Date: " + date.getDayOfMonth() + "-" + date.getMonthValue() + "-" + date.getYear();
+		return "Workout ID: " + id + ", Exercise: " + exersize + ", Notes: " + notes + ", Sets: " + set + ", Reps: " + rep
+				+ ", Weight: " + weight + ", Split: " + split + ", Date: " + date;
 	}
 
 

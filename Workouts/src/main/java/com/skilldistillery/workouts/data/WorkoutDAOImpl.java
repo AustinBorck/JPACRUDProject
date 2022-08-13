@@ -1,6 +1,7 @@
 package com.skilldistillery.workouts.data;
 
-import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
 import java.util.List;
 
 import javax.persistence.EntityManager;
@@ -10,14 +11,14 @@ import javax.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import com.skilldistillery.workouts.entities.Workout;
+
 @Service
 @Transactional
 public class WorkoutDAOImpl implements WorkoutDAO {
 
 	@PersistenceContext
 	private EntityManager em;
-	
-	
+
 	@Override
 	public Workout findById(int id) {
 		return em.find(Workout.class, id);
@@ -25,21 +26,27 @@ public class WorkoutDAOImpl implements WorkoutDAO {
 
 	@Override
 	public List<Workout> findAll() {
-		List<Workout> workouts = null;
-//		String jpql = "SELECT f FROM Film f";
-//		return em.createQuery(jpql, Film.class).getResultList();
-		return workouts;
+		String jpql = "SELECT w FROM Workout w";
+		return em.createQuery(jpql, Workout.class).getResultList();
 	}
 
 	@Override
-	public List<Workout> findWorkoutsByDate(Date date) {
+	public List<Workout> findWorkoutsByDate(String date) {
+		String jpql = "SELECT w FROM Workout w WHERE w.date LIKE :date";
 		List<Workout> workouts = null;
+		workouts = em.createQuery(jpql, Workout.class).setParameter("date", date).getResultList();
 		return workouts;
 	}
 
 	@Override
 	public boolean deleteWorkout(int id) {
-		return false;
+		boolean worked = false;
+		Workout deleteMe = em.find(Workout.class, id);
+		if (deleteMe != null) {
+			em.remove(deleteMe);
+			worked = !em.contains(deleteMe);
+		}
+		return worked;
 	}
 
 	@Override
@@ -49,8 +56,8 @@ public class WorkoutDAOImpl implements WorkoutDAO {
 
 	@Override
 	public Workout createWorkout(Workout newWorkout) {
-		
-		return null;
+		em.persist(newWorkout);
+		return newWorkout;
 	}
 
 }

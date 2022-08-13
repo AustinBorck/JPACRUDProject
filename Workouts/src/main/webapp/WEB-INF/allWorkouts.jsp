@@ -5,9 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>All Workouts</title>
+<jsp:include page="bootstrapHead.jsp"/>
+ <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
+<main class="container-fluid">
+
 	<form action="home.do" method="GET">
 		<input type="submit" value="Home">
 	</form>
@@ -52,5 +57,6 @@
 			</c:forEach>
 		</tbody>
 	</table>
+	</main>
 </body>
 </html>

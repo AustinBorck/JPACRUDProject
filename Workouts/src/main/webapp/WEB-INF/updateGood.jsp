@@ -5,12 +5,18 @@
 <head>
 <meta charset="UTF-8">
 <title>Update Good</title>
+<jsp:include page="bootstrapHead.jsp"/>
+ <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
+<main class="container-fluid">
+
 <form action="home.do" method="GET">
 <input type="submit" value="Home">
 </form>
 <h2>Updated Workout</h2>
 ${workout}
+</main>
 </body>
 </html>

@@ -5,12 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <title>Delete successful</title>
+ <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
+<main class="container-fluid">
+
 <form action="home.do" method="GET">
 <input type="submit" value="Home">
 
 <h2>The workout was deleted</h2>
 </form>
+</main>
 </body>
 </html>

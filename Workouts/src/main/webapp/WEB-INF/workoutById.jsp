@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Workout ID</title>
+<jsp:include page="bootstrapHead.jsp"/>
+ <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
+<main class="container-fluid">
+
 	<form action="home.do" method="GET">
 		<input type="submit" value="Home">
 	</form>
@@ -22,6 +27,6 @@
 		<input type="hidden" value="${workout.id}" name="UpdateThisWorkout" /> <input
 			type="submit" value="Update" class="update" />
 	</form>
-
+</main>
 </body>
 </html>

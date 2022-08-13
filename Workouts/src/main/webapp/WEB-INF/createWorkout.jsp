@@ -5,8 +5,13 @@
 <head>
 <meta charset="UTF-8">
 <title>Create</title>
+<jsp:include page="bootstrapHead.jsp"/>
+ <link rel="stylesheet" href="../css/styles.css">
+
 </head>
 <body>
+<main class="container-fluid">
+
 <form action="home.do" method="GET">
 <input type="submit" value="Home">
 </form>
@@ -26,5 +31,6 @@ Notes: <input type="text" name="notes"/><br>
 <input type="submit" value="Add Workout"/>
 
 </form>
+</main>
 </body>
 </html>

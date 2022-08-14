@@ -18,7 +18,7 @@
 <h1>Add a workout</h1>
 
 <form action="createWorkout.do" method="POST">
-Date: <input type="text" name="date"/>
+Date: <input type="date" name="date"/>
 <h5>Split day</h5>
 Push: <input type="radio" name="split" value="Push"/><br>
 Pull: <input type="radio" name="split" value="Pull"/><br>

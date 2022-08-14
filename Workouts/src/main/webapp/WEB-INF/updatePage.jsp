@@ -18,7 +18,7 @@
 
 <h2>Workout to Update</h2>
 <form action="update.do" method="POST">
-Date: <input type="text" name="date" value="${workout.date}"/><br> 
+Date: <input type="date" name="date" value="${workout.date}"/><br> 
 <h5>Split day</h5>
 Push: <input type="radio" name="split" value="Push"/><br>
 Pull: <input type="radio" name="split" value="Pull"/><br>

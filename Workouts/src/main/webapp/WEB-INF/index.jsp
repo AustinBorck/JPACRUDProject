@@ -20,15 +20,15 @@
 <form action="createPage.do" method="GET">
 <input type="submit" value="Create Workout" class="button">
 </form><br><br>
-<h4>Look up Workouts by Date YYYY-MM-DD</h4>
+<h4>Look up Workouts by Date</h4>
 <form action="workoutByDate.do" method="GET">
-<input type="text" name="date"/>
-<input type="submit" value="search" class="button"/>
+<input type="date" name="date"/>
+<input type="submit" value="Search" class="button"/>
 </form>
 <h4>Select Workout by ID</h4>
 <form action="workoutById.do" method="GET" >
 <input type="number" name="id" required>
-<input type="submit" value="search" class="button"/>
+<input type="submit" value="Search" class="button"/>
 </form>
 </main>
 <jsp:include page="bootstrapFoot.jsp"/>

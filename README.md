@@ -3,14 +3,14 @@
 ## Overview
 On my full-stack website the user is able to log your workouts the user can include the date, exercise, repetitions, number of sets and the weight they used for that exercise. The user is able to view all the exercises in the database, look up a single exercise or search for all the exercises done on a specific date. Once viewing an exercise the user has the option to delete or edit an exercise. If the user searches for a date with no exercises or an ID that has not been assigned to an exercise then they will be shown a page telling them that no exercises match that criteria.
 ## Technology used
-Git
-Gradle
-MySQL Workbench
-JPQL
-Java
-JSP
-CSS
-Spring Boot
+* Git
+* Gradle
+* MySQL Workbench
+* JPQL
+* Java
+* JSP
+* CSS
+* Spring Boot
 ## Lessons Learned
 #### Managing JSPs
 I used two separate controllers to update an entry, one takes the user to the update page and the other applies the users update. This caused an error due to poor management of the name for my model attribute. They become increasingly difficult to keep track of as the number of controllers grow, to keep this from happening again I focused on one controller at a time vs trying to complete two at once and rush my work. I also used sticky notes and wrote down the names for every attribute under each controller I have.

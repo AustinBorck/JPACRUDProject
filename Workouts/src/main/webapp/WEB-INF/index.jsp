@@ -13,7 +13,7 @@
 
 <h1>Workout Log</h1>
 
-<h3>Select What you'd like to do</h3><br>
+<br>
 <form action="showWorkouts.do" method="GET">
 <input type="submit" value="Show all Workouts" class="button"/>
 </form><br><br>

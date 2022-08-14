@@ -16,6 +16,7 @@ public class Workout {
 	private String exersize;
 	private String notes;
 	
+	
 	@Column(name="number_sets")
 	private Integer set;
 	private Integer rep;

@@ -79,4 +79,5 @@ public class WorkoutController {
 		return "updateGood";
 	}
 	
+	
 }

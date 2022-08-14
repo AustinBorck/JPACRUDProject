@@ -44,7 +44,19 @@ class WorkoutTest {
 	@Test
 	void test_workout_entity_mapping() {
 		assertNotNull(workout);
-		assertEquals("Squat", workout.getExersize());
+		assertEquals("BackSquat", workout.getExersize());
+	}
+	@Test
+	void test_workout_entity_mappings() {
+		assertEquals("2022-08-10", workout.getDate());
+	}
+	@Test
+	void test_workout_entity_mapping_set() {
+		assertEquals(5, workout.getSet());
+	}
+	@Test
+	void test_workout_entity_mappings_rep() {
+		assertEquals(10, workout.getRep());
 	}
 
 }

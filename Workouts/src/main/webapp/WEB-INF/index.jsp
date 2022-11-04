@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Workout App</title>
 <jsp:include page="bootstrapHead.jsp"/>
- <link rel="stylesheet" href="../css/styles.css">
+<!--<link rel="stylesheet" href="/css/styles.css"> -->
 </head>
 <body>
 <main class="container-fluid">

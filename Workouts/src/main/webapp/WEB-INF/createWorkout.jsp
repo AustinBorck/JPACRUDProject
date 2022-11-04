@@ -18,16 +18,22 @@
 <h1>Add a workout</h1>
 
 <form action="createWorkout.do" method="POST">
-Date: <input type="date" name="date"/>
+Date: <input type="date" name="date"/> <br>
 <h5>Split day</h5>
 Push: <input type="radio" name="split" value="Push"/><br>
 Pull: <input type="radio" name="split" value="Pull"/><br>
-Legs: <input type="radio" name="split" value="Legs"/><br>
-Exercise: <input type="text" name="exersize" required/><br>
-Sets: <input type="number" name="set"/><br>
-Reps: <input type="number" name="rep"/><br>
-Weight: <input type="number" name="weight"/><br>
-Notes: <input type="text" name="notes"/><br>
+Legs: <input type="radio" name="split" value="Legs"/><br> 
+<input type="text" name="exersize" required placeholder="Exercise"/><br> <br>
+<input type="number" name="set" placeholder="Sets"/><br> <br>
+<input type="number" name="rep" placeholder="Repetitions"/><br> <br>
+<input type="number" name="weight" placeholder="Weight"/><br> <br>
+
+<textarea name="notes" cols="25" rows="5" placeholder="Notes..."> 
+</textarea>
+
+<!-- <input type="text" name="notes"/>-->
+
+<br>
 <input type="submit" value="Add Workout"/>
 
 </form>
